@@ -1,9 +1,9 @@
 /*Name:  Gourisankar sivakumar
   Student number: 8980734 */
-header h1 {
+  header h1 {
     padding: 20px;
     background-color: antiquewhite;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: red;
     margin: 0;
 }
@@ -40,6 +40,9 @@ nav a {
     color: rgb(104, 72, 126);
     background-color: cornsilk;
     text-decoration: none;
+}
+nav li a{
+    padding: 1em;
 }
 nav a:hover {
     color: cornsilk;
@@ -106,10 +109,11 @@ footer{
     text-align: center;
     margin-top: 15px;
     padding: 10px 0;
-    clear: both;
+    
    
 }
 aside{
+    flex: 1 1 30%;
         padding: 20px;
         background-color: cornsilk;
         float: right;
@@ -156,6 +160,7 @@ aside{
                 background-color: #f2f2f2;
                 width: 70%;
                 padding-bottom: 600px;  
+                margin: 1rem;
         }
 
         footer p{
@@ -163,4 +168,46 @@ aside{
         }
         a:hover{
                 color: #888
+        }
+        html{
+            font: 20px Arial, sans-serif;
+        }
+        section.plus{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        main{
+            flex: 2 1 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        figcaption{
+            text-align: center;
+
+        }
+        figure img{
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+        figure{
+            border: 1px solid black;
+
+        }
+        @media(max-width: 600px){
+                html{
+                    font-size: 10px;
+                }
+                section.plus{
+                    flex-direction: column;
+                }
+                body{
+                    display: block;
+                }
+                aside{
+                    order: 1;
+                }
         }
